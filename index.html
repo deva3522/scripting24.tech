@@ -14,6 +14,12 @@
                }
                return color;
           }
+          function downloadFile() { 
+               setTimeout(function() { 
+                    console.log("File download complete!"); 
+                    downloadSuccess(); 
+               }, 2000); 
+          }
           function downloadSuccess() {
                alert("File downloaded successfully!");
           }
@@ -85,6 +91,7 @@
      <body bgcolor="#FFFFFF" link="#0077FF">
      <button onclick="changeBackgroundColor()">Change Background Color</button>
           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          <button onclick="downloadFile()">Download File</button>
 
 <center>
 <font size="+2"><b>CSDX 204 - Scripting Language </b></font><br><font size="+1">
