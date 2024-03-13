@@ -3,14 +3,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="JavaScript-Logo.png">
      <script>
-          var images = ['HTML5_logo_and_wordmark.svg.png', 'CSS3_logo_and_wordmark.svg.png', 'PHP-logo.svg.png', 'Bootstrap_logo.svg.png', '9d0a6780-394a-11eb-9fd1-6296a684b124.jpeg','1*Kj8Eq401fP2ecTY8r9B89Q.png','JavaScript-Logo.png','5fd3903b41d20bd2244ec3fd_programminglanguagesstickers.jpg']; 
-        var currentIndex = 0;
-        var imageElement = document.getElementById('imageContainer');
+          var images = ['HTML5_logo_and_wordmark.svg.png', 'JavaScript-Logo.png', 'CSS3_logo_and_wordmark.svg.png','PHP-logo.svg.png', '5fd3903b41d20bd2244ec3fd_programminglanguagesstickers.jpg', '1*Kj8Eq401fP2ecTY8r9B89Q.png']; 
+          var currentIndex = 0;
+          var imageElement = document.getElementById('imageContainer');
 
-        function displayNextImage() {
-            imageElement.src = images[currentIndex];
-            currentIndex = (currentIndex + 1) % images.length;
-            setTimeout(displayNextImage, 3000); 
+          function displayNextImage() {
+               imageElement.src = images[currentIndex];
+               currentIndex = (currentIndex + 1) % images.length;
+               setTimeout(displayNextImage, 3000); 
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -92,12 +92,12 @@
         a {
             text-decoration: none;
             color: blue;
-             text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f;
+             transition: text-shadow 0.3s ease;
         }
         a:hover {
             color: darkblue;
              text-decoration: underline;
-             text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0, 0 0 20px #0f0, 0 0 25px #0f0;
+             text-shadow: 0 0 5px #0077FF;;
         }
           .dark-mode {
             background-color: #333;
