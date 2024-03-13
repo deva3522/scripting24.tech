@@ -3,6 +3,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="JavaScript-Logo.png">
      <script>
+          function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
           function downloadFile() { 
                setTimeout(function() { 
                     console.log("File download complete!"); 
@@ -87,12 +98,13 @@
 <body bgcolor="#FFFFFF" link="#0077FF">
      <body bgcolor="#FFFFFF" link="#0077FF">
           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+          <button onclick="changeBackgroundColor()">Change Background Color</button>
           
 
 <center>
-<font size="+2"><b>CSDX 204 - Scripting Language </b></font><br><font size="+1">
+<font size="+2"><b> 4th Semester :- CSDX 204 - Scripting Language </b></font><br><font size="+1">
      
-<b>Faculty - <a href="https://crescent.education/university/schools/school-of-computer-information-and-mathematical-sciences/department-of-computer-science-and-engineering/faculty-info/faculty-members/a-snegaa/">Mrs. A. Snegaa, Assistant Professor/Computer Science & Engineering</a><br>
+<b>Faculty - <a href="https://crescent.education/university/schools/school-of-computer-information-and-mathematical-sciences/department-of-computer-science-and-engineering/faculty-info/faculty-members/a-snegaa/">Ms. A. Snegaa, Assistant Professor/Computer Science & Engineering</a><br>
    B.S. ABDUR RAHMAN CRESCENT INSTITUTE OF SCIENCE AND TECHNOLOGY</a> <br>
 </b>
 </b></font>
