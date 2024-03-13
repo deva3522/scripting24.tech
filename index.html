@@ -3,17 +3,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="JavaScript-Logo.png">
      <script>
-          function changeBackgroundColor() {
-               document.body.style.backgroundColor = getRandomColor();
-          }
-          function getRandomColor() {
-               var letters = '0123456789ABCDEF';
-               var color = '#';
-               for (var i = 0; i < 6; i++) {
-                    color += letters[Math.floor(Math.random() * 16)];
-               }
-               return color;
-          }
           function downloadFile() { 
                setTimeout(function() { 
                     console.log("File download complete!"); 
@@ -97,7 +86,6 @@
 </head>
 <body bgcolor="#FFFFFF" link="#0077FF">
      <body bgcolor="#FFFFFF" link="#0077FF">
-     <button onclick="changeBackgroundColor()">Change Background Color</button>
           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
           
 
