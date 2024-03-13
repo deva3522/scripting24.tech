@@ -10,7 +10,7 @@
         function displayNextImage() {
             imageElement.src = images[currentIndex];
             currentIndex = (currentIndex + 1) % images.length;
-            setTimeout(displayNextImage, 3000); // Display each image for 3 seconds
+            setTimeout(displayNextImage, 3000); 
         }
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -92,10 +92,12 @@
         a {
             text-decoration: none;
             color: blue;
+             text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f;
         }
         a:hover {
             color: darkblue;
              text-decoration: underline;
+             text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0, 0 0 20px #0f0, 0 0 25px #0f0;
         }
           .dark-mode {
             background-color: #333;
