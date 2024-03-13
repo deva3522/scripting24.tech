@@ -3,6 +3,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="icon" type="image/png" href="JavaScript-Logo.png">
      <script>
+          var images = ['HTML5_logo_and_wordmark.svg.png', 'CSS3_logo_and_wordmark.svg.png', 'PHP-logo.svg.png', 'Bootstrap_logo.svg.png', '9d0a6780-394a-11eb-9fd1-6296a684b124.jpeg','1*Kj8Eq401fP2ecTY8r9B89Q.png','JavaScript-Logo.png','5fd3903b41d20bd2244ec3fd_programminglanguagesstickers.jpg']; 
+        var currentIndex = 0;
+        var imageElement = document.getElementById('imageContainer');
+
+        function displayNextImage() {
+            imageElement.src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+            setTimeout(displayNextImage, 3000); // Display each image for 3 seconds
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            displayNextImage(); // Start displaying images when the DOM is loaded
+        });
           function changeBackgroundColor() {
             document.body.style.backgroundColor = getRandomColor();
         }
@@ -39,6 +52,14 @@
 
 <title> Scripting Language </title>
      <style>
+          #imageContainer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 200px; 
+            height: auto;
+            z-index: 9999; 
+        }
         body {
             background-color: #FFFFFF;
             font-family: Arial, sans-serif;
@@ -99,6 +120,7 @@
      <body bgcolor="#FFFFFF" link="#0077FF">
           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
           <button onclick="changeBackgroundColor()">Change Background Color</button>
+          <img id="imageContainer" src="" alt="Image">
           
 
 <center>
