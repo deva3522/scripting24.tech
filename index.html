@@ -50,7 +50,20 @@
             background-color: #ff9933; 
             transform: translateY(-2px); 
         }
+          .image-container {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            text-align: center;
+        }
 
+        .left-image {
+            left: 0;
+        }
+
+        .right-image {
+            right: 0;
+        }
         
         td:hover {
             border: 2px solid #ff9933;
@@ -139,6 +152,14 @@
                <img src="Small Logo.png" alt="Image" width="300">
           </div>
      </center>
+          <div class="image-container left-image">
+        <img src="JavaScript-Logo.png" alt="Left Image" width="150">
+    </div>
+
+    <!-- Right Image -->
+    <div class="image-container right-image">
+        <img src="PHP-logo.svg.png" alt="Right Image" width="150">
+    </div>
           
           <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
           <button onclick="changeBackgroundColor()">Change Background Color</button>
